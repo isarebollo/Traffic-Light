@@ -5,32 +5,32 @@ function TrafficLigth() {
 	const [Color, setSelectedColor] = useState(" ");
 	return (
 		<>
+			<div className="fondo">
+
+				<div className="TraficLight">
+
+					<div
+						onClick={() => setSelectedColor("red")}
+						className={
+							"Ligth red" + (Color === "red" ? " glow" : " ")
+						}></div>
+					<div
+						onClick={() => setSelectedColor("yellow")}
+						className={
+							"Ligth yellow" + (Color === "yellow" ? " glow" : " ")
+						}></div>
+					<div
+						onClick={() => setSelectedColor("green")}
+						className={
+							"Ligth green" + (Color === "green" ? " glow" : " ")
+						}></div>
+					<ButtonSemaforo
+						funCambiarColor={setSelectedColor}
+						colorActual={Color}></ButtonSemaforo>
 
 
-			<div className="TraficLight">
-				
-				<div
-					onClick={() => setSelectedColor("red")}
-					className={
-						"Ligth red" + (Color === "red" ? " glow" : " ")
-					}></div>
-				<div
-					onClick={() => setSelectedColor("yellow")}
-					className={
-						"Ligth yellow" + (Color === "yellow" ? " glow" : " ")
-					}></div>
-				<div
-					onClick={() => setSelectedColor("green")}
-					className={
-						"Ligth green" + (Color === "green" ? " glow" : " ")
-					}></div>
-				<ButtonSemaforo
-					funCambiarColor={setSelectedColor}
-					colorActual={Color}></ButtonSemaforo>
-
-
+				</div>
 			</div>
-
 
 
 		</>);

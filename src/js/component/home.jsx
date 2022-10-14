@@ -8,7 +8,7 @@ import TrafficLigth from "./TrafficLight.jsx";
 const Home = () => {
 	return (
 		<div>
-			<div className="palo"> </div>
+
 			<TrafficLigth></TrafficLigth>
 		</div>
 	);
