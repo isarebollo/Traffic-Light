@@ -1,0 +1,55 @@
+body {
+    background-color: white;
+    background-image: url(../img/fondo1.png);
+    background-size: 100%;
+
+    background-repeat: no-repeat;
+
+
+}
+
+.TraficLight {
+
+    padding: 12px;
+    display: inline-block;
+    margin-left: 590px;
+    margin-top: 109px;
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+
+}
+
+.Ligth {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: 6px;
+
+}
+
+.red {
+    background-color: red;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.green {
+    background-color: green;
+}
+
+.glow {
+    box-shadow: 0px 0px 9px 4px white
+}
+
+button {
+    margin: 15px 20px;
+    background-color: bisque;
+
+}
